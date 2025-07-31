@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel='stylesheet' href='css/login.css'>
+    <style>
+        .error {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Popup styles */
+        #loginPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+        }
+
+        #loginPopup button {
+            padding: 5px 15px;
+            margin-top: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #loginPopup button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="loginForm" action="" method="post">
+                    <h2>Login</h2>
+                    
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" name="username" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="forget">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+
+                    <input type="submit" class="button" value="Login">
+
+                    <div class="register">
+                        <p>Don't have an account? <a href="#">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="loginPopup">
+        <p id="popupMessage">✅ Login Successful!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const loginPopup = document.getElementById("loginPopup");
+
+        loginForm.addEventListener("submit", function(e) {
+            e.preventDefault(); 
+
+            
+            loginPopup.style.display = "block";
+
+        
+            setTimeout(() => {
+                loginForm.submit();
+            }, 1500);
+        });
+
+        function closePopup() {
+            loginPopup.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Food / Resturant Website Design Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+    
+.custom-alert {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  color: #333;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  display: none; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-alert.show {
+  display: flex;
+}
+
+
+.custom-alert span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.custom-alert .btn {
+  margin-top: 15px;
+}
+</style>
+</head>
+<body>
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> Tasty Bites </a>
+    
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#popular">popular</a>
+        <a href="#menu">menu</a>
+        <a href="#order">order</a>
+        <a href="#blogs">blogs</a>
+        <a href="login.html">login</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="https://www.facebook.com/profile.php?id=100072847773481" target="_blank">
+        <div id="social" class="fab fa-facebook-f"></div> </a>
+        <a href="https://www.instagram.com/dee__kaushik17/" target="_blank" >
+        <div id="social" class="fab fa-instagram" ></div> </a>
+        <a href="https://x.com/home?lang=en" target="_blank">
+        <div id="social" class="fab fa-twitter"></div> </a>
+    </div>
+    
+</header>
+<section class="home" id="home">
+
+    <div class="content">
+        <span>welcome foodies</span>
+        <h3>different spices for the different tastes 😋</h3>
+        <p>We are delighted to have you visit our online fast food haven where your cravings meet convenience. At Tasty Bites, we bring you a delectable selection of fast food, meticulously prepared to satisfy your taste buds</p>
+        <a href="#order" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="image/home-img1.png" alt="" class="home-img">
+        <img src="image/home-parallax-img4.png" alt="" class="home-parallax-img">
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="image">
+        <img src="image/about-img.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>why choose us?</span>
+        <h3 class="title">what's make our food delicious!</h3>
+        <p>At Tasty Bites, we pride ourselves on offering more than just delicious fast food. Here are compelling reasons why you should choose us for your next meal:  Quality Ingredients,Exceptional Taste,Hygienic Practices,Customer Satisfaction and Affordable Prices</p>
+        <div class="icons-container">
+            <div class="icons">
+                <img src="image/serv-1.png" alt="">
+                <h3>fast Service</h3>
+            </div>  
+            <div class="icons">
+                <img src="image/serv-2.png" alt="">
+                <h3>fresh food</h3>
+            </div>   
+            <div class="icons">
+                <img src="image/serv-3.png" alt="">
+                <h3>best quality</h3>
+            </div>  
+            <div class="icons">
+                <img src="image/serv-4.png" alt="">
+                <h3>24/7 support</h3>
+            </div>           
+        </div>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+
+    <div class="heading">
+        <span>our menu</span>
+        <h3>our top dishes</h3>
+    </div>
+
+    <div class="box-container">
+
+        <a href="#order" class="box">
+            <img src="image/menu-1.png" alt="">
+            <div class="content">
+                <h3>Bite Veggie</h3>
+                <div class="price">₹70.00</div>
+            </div>
+        </a>
+
+        <a href="#order" class="box">
+            <img src="image/menu-2.png" alt="">
+            <div class="content">
+                <h3>Bite Farm House </h3>
+                <div class="price">₹299.00</div>
+            </div>
+        </a>
+
+        <a href="#order" class="box">
+            <img src="image/menu-3.png" alt="">
+            <div class="content">
+                <h3>Bite Sandwich</h3>
+                <div class="price">₹50.00</div>
+            </div>
+        </a>
+
+        <a href="#order" class="box">
+            <img src="image/menu-4.png" alt="">
+            <div class="content">
+                <h3>Bite Hot Dog</h3>
+                <div class="price">₹80.00</div>
+            </div>
+        </a>
+
+        <a href="#order" class="box">
+            <img src="image/menu-5.png" alt="">
+            <div class="content">
+                <h3>Bite Fries</h3>
+                <div class="price">₹40.00</div>
+            </div>
+        </a>
+
+        <a href="#order" class="box">
+            <img src="image/menu-6.png" alt="">
+            <div class="content">
+                <h3>Bite Corn</h3>
+                <div class="price">₹199.00</div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<section class="popular" id="popular">
+
+    <div class="heading">
+        <span>popular food</span>
+        <h3>our special dishes</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite Momos</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (150) </span>
+                </div>
+                <div class="price">₹110.00 <span>₹150.00</span></div>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite Maharaja</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">₹99.00 <span>₹120.00</span></div>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite greek</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">₹220.00 <span>₹250.00</span></div>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite cozzy</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">₹50.00 <span>₹80.00</span></div>
+               
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-5.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite Sicilian</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (90) </span>
+                </div>
+                <div class="price">₹240.00 <span>₹300.00</span></div>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-6.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite pepperoni</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">₹320.00 <span>₹350.00</span></div>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-7.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite sassy</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">₹70.00 <span>₹90.00</span></div>
+               
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/food-8.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bite BBQ </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (50) </span>
+                </div>
+                <div class="price">₹440.00 <span>₹550.00</span></div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <span>our blogs</span>
+        <h3>our daily stories</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 1st may, 2024 </h3>
+                <img src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> food / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> burger / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> pizza  </a>
+                </div>
+                <h3>Juicy Spicy burger </h3>
+                <p>Amazing taste, best quntity and quality just love it</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 7th may, 2024 </h3>
+                <img src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> food / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> burger / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> pizza  </a>
+                </div>
+                <h3>Best rolls</h3>
+                <p>Amazing taste, best quntity and quality just love it</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 15th may, 2024 </h3>
+                <img src="image/blog-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> food / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> burger / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> pizza  </a>
+                </div>
+                <h3>Best Combo</h3>
+                <p>Amazing taste, best quntity and quality just love it</p>
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="order" id="order">
+
+    <div class="heading">
+        <span>order now</span>
+        <h3>for Take Away</h3>
+    </div>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <img src="image/icon-1.png" alt="">
+            <h3>7:00am to 10:30pm</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-2.png" alt="">
+            <h3>91+7060078920</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-3.png" alt="">
+            <h3>Aligarh, india - 202001</h3>
+        </div>
+
+    </div>
+        <?php
+            include('config_db.php');
+        ?>
+    <form id="orderForm" enctype="multipart/form-data">
+        <div class="flex">
+            <div class="inputBox">
+                <span>Your name</span>
+                <input type="text" placeholder="Customer's name" name="name" id="name" required>
+            </div>
+            <div class="inputBox">
+                <span>Your number</span>
+                <input type="number" placeholder="Customer's number" name="customer_number" id="number" required>
+            </div>
+        </div>
+    
+        <div class="flex">
+            <div class="inputBox">
+                <span>Your order</span>
+                <input type="text" placeholder="Food you want" name="customer_order" id="order" required>
+            </div>
+            <div class="inputBox">
+                <span>How much</span>
+                <input type="number" placeholder="Number of orders" name="order_quantity" id="quantity" required>
+            </div>
+        </div>
+    
+        <div class="flex">
+            <div class="inputBox">
+                <span>Additional items</span>
+                <input type="text" placeholder="Your message" name="customer_details" id="details" required>
+            </div>
+            <div class="inputBox">
+                <span>Pick up time</span>
+                <input type="datetime-local" name="pickup_time" id="pickup" required>
+            </div>
+        </div>
+    
+        <div class="flex">
+            <div class="inputBox">
+                <textarea placeholder="Your address" name="customer_address" cols="30" rows="10" id="address" required></textarea>
+            </div>
+            <div class="inputBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112827.7228642443!2d78.00627590723641!3d27.906074741861595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a48686459c8b%3A0x95d967276d323613!2z4KSF4KSy4KWA4KSX4KSiLCDgpIngpKTgpY3gpKTgpLAg4KSq4KWN4KSw4KSm4KWH4KS2!5e0!3m2!1shi!2sin!4v1712565706340!5m2!1shi!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+        </div>
+        
+        <input type="submit" name="submit" value="Proceed to order" class="btn">
+        
+        <div id="customAlert" class="custom-alert">
+            <span id="alertMessage"></span>
+            <a href="#" onclick="closeAlert();" class="btn">OK</a>
+        </div>
+    </form>
+   
+<script>
+    const orderForm = document.getElementById("orderForm");
+    const customAlert = document.getElementById("customAlert");
+    const alertMessage = document.getElementById("alertMessage");
+
+    orderForm.addEventListener("submit", function(e) {
+        e.preventDefault(); 
+
+        alertMessage.textContent = "✅ Your order is placed successfully!";
+        customAlert.style.display = "block";
+
+        
+        orderForm.reset();
+    });
+
+    function closeAlert() {
+        customAlert.style.display = "none";
+    }
+</script>
+</section>
+
+<section class="footer">
+ 
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our menu</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i> pizza</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> burger</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> chicken</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> pasta</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> and more...</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="#about"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="#popular"> <i class="fas fa-arrow-right"></i> popular</a>
+            <a href="#menu"> <i class="fas fa-arrow-right"></i> menu</a>
+            <a href="#order"> <i class="fas fa-arrow-right"></i> order</a>
+            <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privary policy</a>
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p>monday : 7:00am to 10:00pm</p>
+            <p>tuesday : 7:00am to 10:00pm</p>
+            <p>wednesday : 7:00am to 10:00pm</p>
+            <p>friday : 7:00am to 10:00pm</p>
+            <p>saturday and sunday closed</p>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <div class="credit"> created <span>Deeksha_Chandu.com</span> | all rights reserved! </div>
+        
+    </div>
+
+</section>
+
+<div id="customAlert" style="
+    display:none; 
+    position:fixed; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%,-50%); 
+    background:#fff; 
+    padding:20px; 
+    border:2px solid #333; 
+    border-radius:10px; 
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+">
+    <p>✅ Your order is placed successfully!</p>
+    <button type="button" onclick="closeAlert()" style="padding:5px 15px;">OK</button>
+</div>
+
+<script>
+    const orderForm = document.getElementById("orderForm");
+    const customAlert = document.getElementById("customAlert");
+
+    orderForm.addEventListener("submit", function(e) {
+        e.preventDefault(); 
+        customAlert.style.display = "block"; 
+        orderForm.reset(); 
+    });
+
+    function closeAlert() {
+        customAlert.style.display = "none"; 
+    }
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
